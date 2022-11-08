@@ -10,16 +10,18 @@
 </head>
 <body>
     <h2>Gestione Note 1.0</h2>
-    <input type="text" id="edtNota">
-    <button id="btnAdd">Aggiungi ..</button>
-    <button id="btnClear">Cancella Lista ..</button>
+    <input type="text" id="edtNota" placeholder="Type here" class="input input-bordered input-primary w-full max-w-xs" >
+    <div class="btn-group">
+    <button id="btnAdd" class="btn btn-primary">Aggiungi ..</button>
+    <button id="btnClear" class="btn btn-primary">Cancella Lista ..</button>
+</div>
     <br>
    
-    <ul id="listaTask">
+    <!-- <ul id="listaTask">
         <li>1</li>
         <li>2</li>
         <li>3</li>
-    </ul>
+    </ul> -->
     <div class="overflow-x-auto">
         <table class="table w-full">
           <!-- head -->
@@ -29,18 +31,20 @@
               <th>Data</th>
               <th>Ora</th>
               <th>Task</th>
+              <th>Sel.</th>
             </tr>
           </thead>
           <tbody id="bodyTask">
             <!-- row 1 -->
-            <tr>
+            <!-- <tr>
               <th>1</th>
               <td>29/10/2022</td>
               <td>11:24:00</td>
               <td>DaisyUI Usage</td>
-            </tr>
+            </tr> -->
           </tbody>
         </table>
+        
       </div>
 
 <script src="main.js"></script>    
